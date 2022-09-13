@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red
+}
+.form-box{
+    min-width: 100%;
+    height: 100vh;
+    border: dotted #00FF00 3vw;
+   /* #F55A00 3vw;
+    border: 1px solid red; *w
+    margin: 0vw;
+    padding: 5vw ;
+    position:relative; 
+    /* position:relative for .prevBtn and .nextBtn position:absolute; */
+}
+.form-box h5{
+    font-size: 35px ;
+    text-align: center;
+    color: #F55A00;
+    margin: 0 0 .5vh 0;
+}
+.form-box label{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2vh 0;
+}
+.form-box input{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0 ;
+    border:0;
+    border-radius: 5px;
+    font-size: 20px;
+    color:grey
+}
+.form-box select{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0 ;
+    border:0;
+    border-radius: 5px;
+    font-size: 20px;
+    color:grey}
+
+select option[selected]{ color:black;}
+/*select option:first { color: grey; }
+select.empty { color: grey; }
+ Hidden placeholder 
+select option[disabled]:first-child { display: none; }*/
+
+
+#businesstype div[disabled] {
+    opacity: 0.5;
+}
+.textbox{
+    display: block;
+    width: 100%;
+    height: 25%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0 ;
+    border:0;
+    border-radius: 5px;
+    font-size: 20px;
+    color:grey
+    
+}
+
+th {
+margin-left: 5px;
+}
+    
