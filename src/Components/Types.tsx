@@ -27,4 +27,14 @@ export interface PenPic{
     personality:Pers
     leadership:Lead
     penPicture:PenPic
+
+}
+export interface Data{
+    Data:MMC
+}
+export interface MTM{
+   ref?:any;
+   ts?:number 
+   data:MMC
+    
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import{ MMC} from "./Types"
+import{MMC} from "./Types"
 import './style.css'
 interface props{
   handleSubmit: (e: React.FormEvent) => void
   setState:React.Dispatch<React.SetStateAction<MMC>>
   State:MMC
-
+  //Par:Part
+  //setPar:React.Dispatch<React.SetStateAction<Part>>
   
 }
 
@@ -13,11 +14,11 @@ const Particular:React.FC<props>=({ State,setState, handleSubmit})=>{
  
   const updateField=(e:React.FormEvent)=>{
     const target = e.target as HTMLInputElement
-   /* setPar({
+    /*setPar({
       ...Par,
       [target.name]:target.value})
-      ;
-     */ setState({
+      ;*/
+     setState({
        ...State,
        particular:{...State.particular,     
         [target.name]:target.value}
