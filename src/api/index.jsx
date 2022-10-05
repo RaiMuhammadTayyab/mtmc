@@ -33,7 +33,34 @@ export const retrieveNote=async(name)=>{
 catch(error){
   alert("Name not found")
 }
-} 
+}
+export  async function  Replace(ID,Name){
+  try{
+return await client
+.query(
+  q.Update(
+    q.Ref(q.Collection('MTMC'),ID),
+    {
+      data:{
+        Data:{
+        particular:{
+          Name
+      }
+    }
+    }
+      }
+    
+
+    
+      )
+
+)
+}
+
+catch(error){
+  alert('Not replaced')
+}
+  }
 //Paginate(Documents(Index('some_index')))
 /*export const retrieve=async()=>{
   try{ 
